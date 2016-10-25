@@ -276,8 +276,8 @@
 			<name>main-db</name>
 			<provider>jeeves.resources.dbms.ApacheDBCPool</provider>
 			<config>
-				<user>postgres</user>
-				<password>rootpostgres</password>
+				<user>user</user>
+				<password>password</password>
 				<!-- we use org.postgis.DriverWrapper in place of
 				org.postgresql.Driver to support both postgresql and postgis -->
 				<driver>org.postgresql.Driver</driver>
@@ -292,7 +292,7 @@
 					jdbc:postgresql_postGIS://host:port/database
 					
 				-->
-				<url>jdbc:postgresql://scop-dev.it.csiro.au:5432/geonetwork</url>
+				<url>jdbc:postgresql://host:5432/geonetwork</url>
 				<poolSize>10</poolSize>
 				<validationQuery>SELECT 1</validationQuery>
 			</config>
@@ -1515,7 +1515,6 @@
 	<include>config-csw-servers.xml</include>
 	<include>config-monitoring.xml</include>
     <include>config-dcat-rdf.xml</include>
-
 	<!-- ====================================================================== -->
 
 </geonet>
