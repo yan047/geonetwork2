@@ -22,7 +22,7 @@ RUN mkdir /var/geonetwork && \
 
 # download compiled geonetwork.war    
 WORKDIR /var/geonetwork
-RUN wget http://siss.csiro.au/siss/geonetwork/geonetwork-2.10.1/62/geonetwork.war.zip
+RUN wget http://siss.csiro.au/siss/geonetwork/geonetwork-2.10.4/65/geonetwork.war.zip
 
 # deploy geonetwork
 RUN unzip geonetwork.war.zip
